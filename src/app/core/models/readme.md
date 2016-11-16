@@ -1,0 +1,1 @@
+The core/models folder holds all top-level sharable models for the application.

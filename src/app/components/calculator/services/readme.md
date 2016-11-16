@@ -1,0 +1,1 @@
+The app/{feature}/resources folder holds the potential services that use resource(s) to fetch or persist data needed for the view.

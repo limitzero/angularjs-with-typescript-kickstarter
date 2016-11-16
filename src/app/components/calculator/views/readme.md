@@ -1,0 +1,1 @@
+The app/{feature}/view folder holds the html for the indicated view.

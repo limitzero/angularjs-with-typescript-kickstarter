@@ -1,0 +1,59 @@
+'use strict';
+var task = {
+
+            compile_server : {
+                 files: [ {src: ["./src/***.ts"], dest: '/src/js' },
+                    {src: ["./src/***.ts"], dest: "./test/js" }
+                 ], 
+                 options: {
+                     fast: 'never', 
+                     module: 'commonjs'
+                 }
+            },
+
+            compile_client : {
+                files: [ {src: ['./public/app/**/*.ts'], dest: './public/app/js'}, 
+                    {src:['./public/app/test/**/*.ts'], dest: './public/app/test/js' }
+                ], 
+                options: {
+                     fast: 'never', 
+                     module: 'amd'
+                 }
+            }
+            
+            source: {
+                src: ["./src/***.ts", "!node_modules/**/*.ts"], 
+                outDir : './src/js',
+                // Avoid compiling TypeScript files in node_modules
+                options: {
+                    module: 'commonjs', 
+                    // To compile TypeScript using external modules like NodeJS
+                    fast: 'never' 
+                    // You'll need to recompile all the files each time for NodeJS
+                }
+            }, 
+        public_app :{
+            src: ['./public/app/**/*.ts', '!node_modules/**/*.ts'], 
+                outDir : './public/app/js',
+                // Avoid compiling TypeScript files in node_modules
+                options: {
+                    module: 'amd', // amd for client-side 
+                    // To compile TypeScript using external modules like NodeJS
+                    fast: 'never' 
+                    // You'll need to recompile all the files each time for NodeJS
+                }
+        },
+         tests: {
+                src: ['./public/app/test/**/*.ts',  './test/***.ts', '!node_modules/**/*.ts'], 
+                outDir : './test/js',
+                // Avoid compiling TypeScript files in node_modules
+                options: {
+                    module: 'commonjs', 
+                    // To compile TypeScript using external modules like NodeJS
+                    fast: 'never' 
+                    // You'll need to recompile all the files each time for NodeJS
+                }
+            },  
+};
+
+module.exports = task;

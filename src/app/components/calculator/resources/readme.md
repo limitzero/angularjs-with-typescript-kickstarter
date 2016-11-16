@@ -1,0 +1,1 @@
+The app/{feature}/resources folder holds the potential external resources needed to access data for the view.

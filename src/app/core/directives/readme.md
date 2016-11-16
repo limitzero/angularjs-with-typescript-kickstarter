@@ -1,0 +1,1 @@
+The core/directives folder holds all top-level sharable directives for the application.

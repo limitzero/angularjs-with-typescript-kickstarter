@@ -1,0 +1,1 @@
+The app/{feature}/controllers folder holds the controllers that communicate with the indicated view.

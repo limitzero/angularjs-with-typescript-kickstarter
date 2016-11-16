@@ -1,0 +1,1 @@
+The services folder holds the top-level facade level access to the resources (i.e. HTTP, Database, or any other external source of information)

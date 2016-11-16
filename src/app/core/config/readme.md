@@ -1,0 +1,1 @@
+The core/config folder holds all of the application level configuration information from one environment to another (if needed)

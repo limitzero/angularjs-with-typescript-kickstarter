@@ -1,0 +1,1 @@
+The app/{feature}/directives folder holds the potential directives needed by the accompanying view.

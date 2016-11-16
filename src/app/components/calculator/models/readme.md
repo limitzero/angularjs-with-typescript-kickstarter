@@ -1,0 +1,1 @@
+The app/{feature}/models folder holds the potential models needed by the accompanying view.
